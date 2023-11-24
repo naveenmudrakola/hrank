@@ -2,6 +2,10 @@
 
 #Use "<" to left-align the value:
 
+#To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
+
+#Use "<" to left-align the value:
+
 print("\n To provide left side 20 spaces")
 txt = "We have {:<20} chickens."
 print(txt.format(49))
@@ -60,8 +64,12 @@ print("\n Scientific format, with a Capital case E")
 txt = "We have {:E} chickens."
 print(txt.format(52))
 
+print("\n Fix point number format with decimal point")
+txt = "We have {:.2f} chickens."
+print(txt.format(52.12345))
+
 print("\n Fix point number format")
-txt = "We have {:f} chickens."
+txt = "We have {:2f} chickens."
 print(txt.format(52.12345))
 
 print("\n Octal format")
